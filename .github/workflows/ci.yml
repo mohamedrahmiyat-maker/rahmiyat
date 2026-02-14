@@ -1,7 +1,5 @@
-name: CI - Verification HTML
-on:
-  push:
-    branches: [ "main" ]
+name: CI
+on: [push]
 jobs:
   test-final:
     runs-on: self-hosted
@@ -10,4 +8,4 @@ jobs:
       - name: Validation
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
         with:
-          files: "[index.html]"
+          files: "index.html"
