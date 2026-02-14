@@ -2,9 +2,9 @@ name: CI - Vérification HTML
 
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
   pull_request:
-    branches: ["main"]
+    branches: [ "main" ]
 
 jobs:
   test-html:
@@ -17,4 +17,4 @@ jobs:
       - name: Vérification syntaxe HTML
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
         with:
-          files: index.html
+          files: [index.html]
