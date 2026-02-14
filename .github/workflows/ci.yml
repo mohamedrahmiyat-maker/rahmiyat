@@ -6,7 +6,7 @@ on:
     branches: [ "main" ]
 jobs:
   test-html:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Récupération du code
         uses: actions/checkout@v3
